@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Antigo Futuro</title>
+        <link rel="stylesheet" type="text/css" href="css/style-contat.css">
+    </head>
+    <body>
+        <header>
+            <div id="banner">
+                <h1>
+                    <img height="108" src="img/logo-antfut.png" alt="Antigo Futuro">
+                </h1>
+    
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <form method="POST" id="cFormulario" action="">
+            <fieldset id="caixa"><legend>Identificação</legend>
+                <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="30" maxlength="50" placeholder="Nome Completo"></p>
+                <p><label for="cMail">E-mail: </label><input type="email" size="20" name="tMail" id="cMail" placeholder="Ex: Joao@lalala.com" ></p>
+                <p><label for="cDate">Data de nascimento: </label> <input type="date" name="tDate" id="cDate"></p>
+            </fieldset>
+
+            <fieldset id="caixa"><legend>Endereço</legend>
+                <p><label for="cLog">Logradouro: </label><input type="text" name="tLog" id="cLog" placeholder="Rua, Av, ..."></p>
+                <p><label for="cNum">Número: </label><input type="number" name="tNum" id="cNum" min="1" max="9999"></p>
+                <p><label for="cEst">Estado: </label>
+                    <select name="tEst" id="cEst">
+                        <optgroup label="Região Sudeste">
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                        </optgroup>
+                    </select></p>
+                <p><label for="cCid">Cidade: </label>
+                <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua cidade" list="cidades">
+                <datalist id="cidades">
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Nova Iguaçu"></option>
+                    <option value="Duque de Caxias"></option>
+                </datalist> </p>
+            </fieldset>
+
+            <fieldset id="caixa"><legend>Mensagem</legend>
+                <p><label for="cMsg">Mensagem: </label>
+                <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Sua mensagem aqui"></textarea></p>
+            </fieldset>
+
+            <fieldset id="caixa"><legend>Informação do Poduto</legend>
+                <input type="radio" name="tFinancia" id="cRemovenda" checked><label for="cRemovenda">Item para reformar e venda</label><br>
+                <input type="radio" name="tFinancia" id="cReformado"><label for="cReformado">reformado</label><br>
+                <input type="radio" name="tFinancia" id="cLeilao"><label for="cLeilao">Leilao</label>
+            </fieldset>
+            <div class="content">
+                <center><a href="#" class="botao01">Enviar</a></center>
+               </div>
+
+            </form>
+
+        <footer id="rodape">
+            <div id="copyright">
+                <a href="#" id="logo-antfut">
+                    <img height= "50" src="img/logo-antfut.png">
+                </a>
+        
+                <p>Todos os direitos reservados &copy; 2020</p>
+            </div>
+            </footer>
+        </body>
+        </html>
